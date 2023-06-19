@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap");
+    </style>
+    <title>ascii art form</title>
+  </head>
+  <body>
+    <!--this form is yet to be modified-->
+    <div class="containermain">
+      <h2>Ascii-art-web</h2>
+      <form action="/ascii-art" method="post">
+        <!--<input type="textbox" placeholder="Enter text" name="Text" class="input" /> -->
+        <textarea placeholder="Enter your text" rows="4" cols="3" name="Text" class="input" required></textarea>
+        <div class="bannerform">
+          <div class="radios">
+            <input
+              type="radio"
+              id="Bannerstan"
+              value="standard"
+              name="Banner"
+              
+            />
+            <label for="Bannerstan" class="Label">Standard</label>
+            <input
+              type="radio"
+              id="Bannershadow"
+              value="shadow"
+              name="Banner"
+            />
+            <label for="bannershadow" class="Label">Shadow</label>
+            <input
+              type="radio"
+              id="Bannerthink"
+              value="thinkertoy"
+              name="Banner"
+            />
+            <label for="Bannerthink" class="Label" class="Label"
+              >Thinkertoy</label>
+          </div>
+        </div>
+        <input type="submit" value="Generate ascii art" class="SubmitBtn">
+      </form>
+      <br>
+    </div>
+    </div>
+    <div class="result">
+      <pre>{{.Result}}</pre>
+    </div>
+  </body>
+</html>
